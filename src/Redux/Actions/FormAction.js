@@ -3,7 +3,7 @@ import axios from "axios";
 export const formDetails = (data1) => async (dispatch) => {
   try {
     dispatch({ type: "FORM_DETAILS_REQUEST" });
-    const { data } = await axios.post(`https://medicalprojectnet.herokuapp.com/api/form/postform`,data1);
+    const { data } = await axios.post(`https://ecommercemedical.onrender.com/api/form/postform`,data1);
     dispatch({ type: "FORM_DETAILS_SUCCESS", payload: data });
     console.log(data);
 
