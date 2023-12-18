@@ -29,7 +29,7 @@ export const login = (data1) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      `http://localhost:5000/api/users/login`,
+      `https://server-uq2x.onrender.com/api/users/login`,
       data1,
       config
     );
@@ -67,7 +67,7 @@ export const register = (data1) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      `http://localhost:5000/api/users`,
+      `https://server-uq2x.onrender.com/api/users`,
       data1,
       config
     );
@@ -96,7 +96,7 @@ export const social = (data1) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      `http://localhost:5000/api/users/social`,
+      `https://server-uq2x.onrender.com/api/users/social`,
       data1,
       config
     );
@@ -163,7 +163,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.put(
-      `http://localhost:5000/api/users/profile`,
+      `https://server-uq2x.onrender.com/api/users/profile`,
       user
     );
     try {
