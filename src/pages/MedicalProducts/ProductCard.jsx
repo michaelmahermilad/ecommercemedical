@@ -5,8 +5,7 @@ import h from './images/h.PNG'
 import './Product.css'
 import 'antd/dist/antd.css';
 import { Link } from 'react-router-dom';
-import { set } from 'mongoose';
-function ProductCard({product,setR}) {
+ function ProductCard({product,setR}) {
 const [rating,setRating]=useState(product.rating);
 console.log(rating);
 
