@@ -90,6 +90,7 @@ function MedicalProducts() {
     >
       <NavBAR funct={funct} setR={setR} pro={productList} />
       <Categories />
+      
       {productDetails.loading ? (
         <div style={{ width: "fit-conetent", margin: "auto" }}>
           <div
@@ -122,7 +123,11 @@ function MedicalProducts() {
           </div>
         </>
       )}
+      <div style={{height:"1rem"}}>  
+</div>
       <Description product={productDetails} />
+      <div style={{height:"1rem"}}>  
+</div>
        <div
         ref={myRe}
         style={{
@@ -134,7 +139,14 @@ function MedicalProducts() {
       >
  
         <Title Font="21px" mobile={false} color="Black" title="Products" />
+        <div style={{height:"1rem"}}>  
+</div>
+<div style={{height:"1rem"}}>  
+</div>
       </div>
+      <div style={{height:"1rem"}}>  
+</div>
+
        <div
         className="grid"
         style={{ width: "94vw", margin: "auto", display: "grid" }}
@@ -172,7 +184,15 @@ function MedicalProducts() {
           </>
         )}
       </div>
+      <div style={{height:"1rem"}}>  
+</div>
+<div style={{height:"1rem"}}>  
+</div>
        <Subs />
+       <div style={{height:"1rem"}}>  
+</div>
+<div style={{height:"1rem"}}>  
+</div>
        <Footer /><Cart T={8}/>
     </div>
   );

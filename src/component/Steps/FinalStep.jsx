@@ -4,7 +4,7 @@ import { styles } from "../common/styles";
 import { renderText } from "../common/DisplayComponent";
 import Frame10 from "./Frame10.svg"
 const FinalStep = ({ state }) => {
-  return (<>
+  return <>
    {/*  <Paper style={styles.steps}>
       <Box mt={2} mb={2}>
         {renderText({
@@ -18,7 +18,7 @@ const FinalStep = ({ state }) => {
       
     </Paper>*/}
    </>
-  );
+  ;
 };
 
 export default FinalStep;

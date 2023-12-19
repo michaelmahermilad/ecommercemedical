@@ -199,15 +199,17 @@ dispatch(social({
                       <Label1>LOGIN</Label1>
                     </div>{" "}
 
+<div style={{height:"1rem"}}>  
+</div>
 
 
-
-                    <FacebookButton  onClick={e=>facebook1(e)}      >
+               {/*
+                                  <FacebookButton  onClick={e=>facebook1(e)}      >
                       <FontAwesomeIcon icon={faFacebookF} />
                       <span className="textlabel"> Sign in with Facebook </span>
                     </FacebookButton>
 
-                    <div >
+                <div >
   
   <GoogleButton onClick={e=>google1(e)}>
                       <svg
@@ -242,6 +244,9 @@ dispatch(social({
                      
                     </div>
             
+               
+               */}   
+                   
    
  
 
@@ -489,7 +494,6 @@ dispatch(social({
                   margin: "auto",
                 }}
               >
-                  <Mypro/>
                 <Grid fill="#6bac6b" style={{ color: "gray" }} />
               </div>
             </div>
@@ -509,8 +513,22 @@ dispatch(social({
                 LOGOUT
               </ButtonInbox>
 
+            
+             </div>
+
+             <div style={{height:"2rem"}}>
 
              </div>
+             <Mypro/>
+             
+             <div style={{height:"2rem"}}>
+
+             </div>
+             <div style={{height:"2rem"}}>
+
+             </div>
+             
+
               <div
                 style={{
                   width: "100%",
@@ -519,6 +537,9 @@ dispatch(social({
                  borderTop: "1px solid #e1e1e1"
                 }}
               >
+                   <div style={{height:"2rem"}}>
+
+</div>
                 <p
                   style={{
                     fontWeight: "800",
@@ -531,6 +552,7 @@ dispatch(social({
                   
                   }}
                 >
+            
                   My Orders
                 </p>
               </div>

@@ -91,7 +91,9 @@ function MedicalProducts() {
     >
       <NavBAR funct={funct} setR={setR} pro={productList} />
       <Categories />
+  
    <Myaccount/>
+ 
       <div
         ref={myRe}
         style={{
@@ -101,9 +103,18 @@ function MedicalProducts() {
           borderBottom: "4px solid rgb(31, 164, 124)",
         }}
       >
- 
+ <div style={{height:"1rem"}}>  
+</div>
+<div style={{height:"1rem"}}>  
+</div>
+<div style={{height:"1rem"}}>  
+</div>
         <Title Font="21px" mobile={false} color="Black" title="Products" />
+        <div style={{height:"1rem"}}>  
+</div>
       </div>
+      <div style={{height:"1rem"}}>  
+</div>
        <div
         className="grid"
         style={{ width: "94vw", margin: "auto", display: "grid" }}
@@ -139,7 +150,29 @@ function MedicalProducts() {
           </>
         )}
       </div>
+      <div style={{height:"1rem"}}>  
+</div>
+<div style={{height:"1rem"}}>  
+</div>
+<div style={{height:"1rem"}}>  
+</div>
+<div style={{height:"1rem"}}>  
+</div>
+<div style={{height:"1rem"}}>  
+</div>
        <Subs />
+       <div style={{height:"1rem"}}>  
+</div>
+<div style={{height:"1rem"}}>  
+</div>
+<div style={{height:"1rem"}}>  
+</div>
+<div style={{height:"1rem"}}>  
+</div>
+<div style={{height:"1rem"}}>  
+</div>
+
+
        <Footer /><Cart T={8}/>
     </div>
   );

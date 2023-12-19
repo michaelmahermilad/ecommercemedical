@@ -152,9 +152,7 @@ const {errors}=state
             {state.message}{" "}
           </div>
         </>
-      ) : (
-        ""
-      )}
+      ) : <></>}
       <Grid container>
         <Grid
           item

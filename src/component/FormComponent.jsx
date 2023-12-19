@@ -267,7 +267,7 @@ setTimeout(() => {
   return (
    <> 
     {end &&  <Grid  container className={styles.formContainer}>
-   (  
+    
     <>  <div ref={myRef}  />
       <Grid
         item
@@ -320,7 +320,7 @@ setTimeout(() => {
        
         </form>
        
-      </Grid></> )
+      </Grid></>  
     </Grid>  }
      {!end &&  (<img  src={Frame10} style={{marginTop:'0px',height:'50vh',width:'100%'}}/>)}
 
