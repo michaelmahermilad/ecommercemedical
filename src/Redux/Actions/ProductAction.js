@@ -19,7 +19,7 @@ export const listProduct =
     try {
       dispatch({ type: PRODUCT_LIST_REQUEST });
       const { data } = await axios.get(
-        `https://server-uq2x.onrender.com/api/prods/all?keyword=${keyword}`
+        `https://server-eight-opal.vercel.app/api/prods/all?keyword=${keyword}`
       );
       dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
       console.log(data);
@@ -37,7 +37,7 @@ export const listProduct =
 export const listProductDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_DETAILS_REQUEST });
-    const { data } = await axios.get(`https://server-uq2x.onrender.com/api/prods?id=${id}`);
+    const { data } = await axios.get(`https://server-eight-opal.vercel.app/api/prods?id=${id}`);
     dispatch({ type: PRODUCT_DETAILS_SUCCESS, payload: data });
     console.log(data);
 

@@ -20,6 +20,12 @@ import { open } from "../../Redux/Actions/CartAction";
 function NavBAR({ funct, pro, setR }) {
 
 const {totalAmount}=useSelector((state)=>state.cart)
+const [total,setTotal]=useState()
+useEffect(()=>{
+  const a=Number(totalAmount).toFixed(1) 
+setTotal(((a)))
+
+},[totalAmount])
   const src = Com;
   const [zoom, setZoom] = useState({
     backgroundImage: `url(${src})`,
@@ -118,7 +124,7 @@ const {totalAmount}=useSelector((state)=>state.cart)
           />
 
           <Price>
-            <p>{totalAmount} $</p>
+            <p>{total>0?`${total} USD`: "Empty"} </p>
 
             <FontAwesomeIcon
               style={{ cursor: "pointer", fontSize: ".8rem", color: "rgb(31, 164, 124)" }}

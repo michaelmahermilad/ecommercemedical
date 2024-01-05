@@ -250,32 +250,7 @@ const {errors}=state
           ></RenderSelectPhone>
         </Grid>
       </Grid>
-      <Grid container>
-        <Grid
-          item
-          xs={12}
-          sm={10}
-          style={{ margin: "auto", marginBottom: "19px" }}
-        >
-          <RenderSelectCountries
-            state={state}
-            type={"select"}
-            name={"s"}
-            label={"Region"}
-            icon={
-              <FontAwesomeIcon
-                style={{
-                  color: "green",
-                  fontSize: "1.2rem",
-                  marginRight: "3px",
-                }}
-                icon={faLocationPin}
-              />
-            }
-            onChange={handleChange}
-          ></RenderSelectCountries>
-        </Grid>
-      </Grid>
+     
       <Grid container>
         {" "}
         <Grid

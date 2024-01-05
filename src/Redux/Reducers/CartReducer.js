@@ -6,7 +6,6 @@ export const CartReducer = (state ={ items: [],open:true, shippingAddress: {} },
         open: action.payload
       };
     case "Remove_SUCCESS":
-
       return {
         ...state,
       items: state.items.filter((item) =>item.product !== action.payload) ,
@@ -37,12 +36,12 @@ console.log(existingCartItemIndex)
      let totalAmount=
         (updatedItems?.length==0 || updatedItems==null )?0:(updatedItems?.length==1)?updatedItems?.[0].all:
      updatedItems.reduce((sum, obj)=> {
-     return  sum + Number(obj.all);
+     return sum + Number(obj.all);
     },0)
           return {
         ...state,
         items: updatedItems,
-        totalAmount
+        totalAmount:totalAmount 
       };
     }catch{
       return {

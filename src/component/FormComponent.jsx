@@ -54,9 +54,9 @@ const FormComponent = () => {
       email: "",
       firstName: "",
       lastName: "",
-      phone: "",  country:"",
+      phone: "", 
       date:"",
-    region:"",
+    
     },
     errors: {
       date:"",
@@ -67,7 +67,7 @@ const FormComponent = () => {
       lastName: "",
       phone: "",
       country:"",
-      region:"",
+      
     },
     steps: [{ label: "Checkout details" }, { label: "Order Complete" }],
     stepCount: 0,
@@ -157,6 +157,7 @@ break;
   
      for (const value of Object.values(data)) {
   if(value==''){
+    console.log(data)
  console.log(value)
 ok=0
  
